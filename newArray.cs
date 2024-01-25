@@ -23,11 +23,9 @@ void fullSecondArray(string[] firstArray, string[] secondArray)
 
 void printArray(string[] array)
 {
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]} ");
-    }
-    Console.WriteLine();
+    Console.Write("[");
+    Console.WriteLine(string.Join(", ", array));
+    Console.Write("]");
 }
 
 fullSecondArray(firstArray, secondArray);
